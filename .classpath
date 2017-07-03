@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/LEE/Desktop/pdfbox-tools-2.0.6.jar"/>
+	<classpathentry kind="lib" path="/Users/LEE/Desktop/xmpbox-2.0.6.jar"/>
+	<classpathentry kind="lib" path="/Users/LEE/Desktop/preflight-2.0.6.jar"/>
+	<classpathentry kind="lib" path="/Users/LEE/Desktop/fontbox-2.0.6.jar"/>
+	<classpathentry kind="lib" path="/Users/LEE/Desktop/preflight-app-2.0.6.jar"/>
+	<classpathentry kind="lib" path="/Users/LEE/Desktop/pdfbox-app-2.0.6.jar"/>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/LEE/Desktop/pdfbox-2.0.6.jar"/>
+	<classpathentry kind="lib" path="/Users/LEE/Desktop/openhtmltopdf/openhtmltopdf-slf4j-0.0.1-RC11.jar"/>
+	<classpathentry kind="lib" path="/Users/LEE/Desktop/openhtmltopdf/openhtmltopdf-log4j-0.0.1-RC11.jar"/>
+	<classpathentry kind="lib" path="/Users/LEE/Desktop/openhtmltopdf/openhtmltopdf-svg-support-0.0.1-RC11.jar"/>
+	<classpathentry kind="lib" path="/Users/LEE/Desktop/openhtmltopdf/openhtmltopdf-jsoup-dom-converter-0.0.1-RC11.jar"/>
+	<classpathentry kind="lib" path="/Users/LEE/Desktop/openhtmltopdf/openhtmltopdf-rtl-support-0.0.1-RC11.jar"/>
+	<classpathentry kind="lib" path="/Users/LEE/Desktop/openhtmltopdf/openhtmltopdf-java2d-0.0.1-RC11.jar"/>
+	<classpathentry kind="lib" path="/Users/LEE/Desktop/openhtmltopdf/openhtmltopdf-pdfbox-0.0.1-RC11.jar"/>
+	<classpathentry kind="lib" path="/Users/LEE/Desktop/openhtmltopdf/openhtmltopdf-core-0.0.1-RC11.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
