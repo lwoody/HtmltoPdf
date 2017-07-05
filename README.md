@@ -45,7 +45,7 @@ Beans 저장위한 클래스파일에서 객체 생성 방법 : ServiceDao객체
 Bean? : 자주 사용하는 객체를 Singleton 객체(인스턴스가 하나뿐인 객체)로 생성해놓고 어디서든 불러서 쓸 수 있는 것을 Spring 에서 Bean 이라는 이름을 붙인 것
         , IoC(inversion of control)방식으로 관리하는 object임 = managed object
 
-field에 대한 setter 필수 <- xml파일의 bean내에 property value속성 값을 주입시키기위해서
+field에 대한 setter 필수 <- xml파일의 bean내에 property value속성 값을 주입시키기위해서 (constructor-arg, 생성자 통한 injection도 있음)
 
 Ioc container(AbstractApplicationContext통한)는 xml에서 context파싱해서 정보 저장한 것 : 인스턴스 생성과 조립 담당 -> 여기서 값이 주입된 Bean 불러옴
 
