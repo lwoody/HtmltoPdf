@@ -29,3 +29,12 @@ html to xhtml converter apply
 발견
 1. css2의 경우 적용가능/ css3에서 webkit, box-resizing등 브라우저에 dependent한 요소들은 인식 불가(@meaida rule, transition, -moz ..)
 
+==Spring==
+DI : dependency injection
+dependency? : object와 object간의 의존성 - A라는 클래스에서 B라는 클래스의 메소드를 불러와 실행하게 될때 그것을 의존한다
+만약 B클래스의 메소드가 바뀌면? -> A안에서도 마찬가지로 변경해줘야함 다수의 클래스가 그럴시 직접 변경 힘들어짐
+따라서 유지보수의 어려움을 덜기위해 DI이용 - 3자(Service)가 만들어준 의존객체를 각 클래스에 뿌려주어 변경의 유연성 제공
+
+Bean? : 자주 사용하는 객체를 Singleton 객체(인스턴스가 하나뿐인 객체)로 생성해놓고 어디서든 불러서 쓸 수 있는 것을 Spring 에서 Bean 이라는 이름을 붙인 것
+        , IoC(inversion of control)방식으로 관리하는 object임 = managed object
+
