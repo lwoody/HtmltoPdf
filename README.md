@@ -31,8 +31,6 @@ html to xhtml converter apply
 
 ==Spring==
 
-terminal : mvn spring-boot:run (실행)
-
 DI : dependency injection
 dependency? : object와 object간의 의존성 - A라는 클래스에서 B라는 클래스의 메소드를 불러와 실행하게 될때 그것을 의존한다
 
