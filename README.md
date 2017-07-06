@@ -75,5 +75,6 @@ Ioc container(AbstractApplicationContext통한)는 xml에서 context파싱해서
 
 spring-boot에서 resource의 static영역에서 img, css, js를 관리해줌 (html파일에서 link,img,src,script 경로 수정하기)
 
+spring-boot에서는 되도록 jsp 사용 
 
 
