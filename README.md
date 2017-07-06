@@ -29,26 +29,6 @@ html to xhtml converter apply
 발견
 1. css2의 경우 적용가능/ css3에서 webkit, box-resizing등 브라우저에 dependent한 요소들은 인식 불가(@meaida rule, transition, -moz ..)
 
-==Spring==
-
-DI : dependency injection
-dependency? : object와 object간의 의존성 - A라는 클래스에서 B라는 클래스의 메소드를 불러와 실행하게 될때 그것을 의존한다
-
-만약 B클래스의 메소드가 바뀌면? -> A안에서도 마찬가지로 변경해줘야함 다수의 클래스가 그럴시 직접 변경 힘들어짐
-
-따라서 유지보수의 어려움을 덜기위해 DI이용 - 3자(Service)가 만들어준 의존객체를 각 클래스에 뿌려주어 변경의 유연성 제공
-
-service역할을 하는 설정파일(XML - applicationContext.xml)을 만들어 각 클래스에서 의존객체들을 주입받음(beans태그 안 객체관리 컨테이너에 설정)
-
-Beans 저장위한 클래스파일에서 객체 생성 방법 : ServiceDao객체 생성
-
-Bean? : 자주 사용하는 객체를 Singleton(인스턴스가 하나뿐인 클래스)로 생성해놓고 어디서든 불러서 쓸 수 있는 것을 Spring 에서 Bean 이라는 이름을 붙인 것
-        , IoC(inversion of control)방식으로 관리하는 object임 = managed object
-
-field에 대한 setter 필수 <- xml파일의 bean내에 property value속성 값을 주입시키기위해서 (constructor-arg, 생성자 통한 injection도 있음)
-
-Ioc container(AbstractApplicationContext통한)는 xml에서 context파싱해서 정보 저장한 것 : 인스턴스 생성과 조립 담당 -> 여기서 값이 주입된 Bean 불러옴
-
 <7.6>
 
 - 목표
@@ -71,6 +51,29 @@ application.properties에서 spring.thymeleaf.mode=LEGACYHTML5 추가하기
 			<version>1.9.21</version>
 		</dependency>
 추가하기
+
+
+==Spring==
+
+DI : dependency injection
+dependency? : object와 object간의 의존성 - A라는 클래스에서 B라는 클래스의 메소드를 불러와 실행하게 될때 그것을 의존한다
+
+만약 B클래스의 메소드가 바뀌면? -> A안에서도 마찬가지로 변경해줘야함 다수의 클래스가 그럴시 직접 변경 힘들어짐
+
+따라서 유지보수의 어려움을 덜기위해 DI이용 - 3자(Service)가 만들어준 의존객체를 각 클래스에 뿌려주어 변경의 유연성 제공
+
+service역할을 하는 설정파일(XML - applicationContext.xml)을 만들어 각 클래스에서 의존객체들을 주입받음(beans태그 안 객체관리 컨테이너에 설정)
+
+Beans 저장위한 클래스파일에서 객체 생성 방법 : ServiceDao객체 생성
+
+Bean? : 자주 사용하는 객체를 Singleton(인스턴스가 하나뿐인 클래스)로 생성해놓고 어디서든 불러서 쓸 수 있는 것을 Spring 에서 Bean 이라는 이름을 붙인 것
+        , IoC(inversion of control)방식으로 관리하는 object임 = managed object
+
+field에 대한 setter 필수 <- xml파일의 bean내에 property value속성 값을 주입시키기위해서 (constructor-arg, 생성자 통한 injection도 있음)
+
+Ioc container(AbstractApplicationContext통한)는 xml에서 context파싱해서 정보 저장한 것 : 인스턴스 생성과 조립 담당 -> 여기서 값이 주입된 Bean 불러옴
+
+spring-boot에서 resource의 static영역에서 img, css, js를 관리해줌 (html파일에서 link,img,src,script 경로 수정하기)
 
 
 
