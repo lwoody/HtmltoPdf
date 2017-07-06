@@ -49,3 +49,28 @@ field에 대한 setter 필수 <- xml파일의 bean내에 property value속성 �
 
 Ioc container(AbstractApplicationContext통한)는 xml에서 context파싱해서 정보 저장한 것 : 인스턴스 생성과 조립 담당 -> 여기서 값이 주입된 Bean 불러옴
 
+<7.6>
+
+- 목표
+1. java-html2image 이외 라이브러리 추가조사
+2. opentohtml 한글 깨짐 해결하기, page split하기
+3. spring 학습과 간단한 서버 구축
+
+spring-boot로 간단한 웹서버 구축 / 보내주신 마크업 형식으로 변환하는 작업 / 인쇄 기능 - 여러페이지 분할해서 가능,  pdf 저장기능 , 프리뷰창 / 브라우저의 프린트 실행시 넘겨주는 데이터 형식( pdf , img)인지 알아야함
+
+로컬 소스파일은 모두 변환 가능 / http url통해 로컬로 받게 하고 프린트 후 지우게 하기?
+
+준영님 알려주신 서적 읽어보기
+
+Thymeleaf 사용시 - html 태그에xmlns:th="http://www.thymeleaf.org" 추가해야함
+
+application.properties에서 spring.thymeleaf.mode=LEGACYHTML5 추가하기
++ <dependency>
+			<groupId>net.sourceforge.nekohtml</groupId>
+			<artifactId>nekohtml</artifactId>
+			<version>1.9.21</version>
+		</dependency>
+추가하기
+
+
+
