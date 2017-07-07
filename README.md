@@ -56,6 +56,9 @@ application.properties에서 spring.thymeleaf.mode=LEGACYHTML5 추가하기
 
 1. convert.html을 만들고 requestmapping에서 javawrapper처리 - HtmltoPdf자바파일 만들고 링크의 경우 localhost로 써서 특정 html 변환처리하기
 
+calendar public source : https://calendar.naver.com/publicCalendar.nhn?publishedKey=769d54e7f884c5f930b4ec86eb15dc38
+
+
 
 ==Spring==
 
