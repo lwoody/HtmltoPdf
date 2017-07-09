@@ -82,6 +82,8 @@ Ioc container(AbstractApplicationContext통한)는 xml에서 context파싱해서
 
 spring-boot에서 resource의 static영역에서 img, css, js를 관리해줌 (html파일에서 link,img,src,script 경로 수정하기)
 
-spring-boot에서는 되도록 jsp 사용자제
+spring-boot에서는 되도록 jsp 사용자제- 표준이긴 하지만 web.xml등 따로 설정해야될 부분도 있고 html을 분리해 관리하기 불편
+
+@Service도 @Conroller나 @Repository처럼 Spring에서 component scan의 대상으로 인지되는 애너테이션이다. 전형적인 스프링 어플리케이션에서는 @Controller가 붙은 클래스 -> @Service가 붙은 클래스 -> @Repository가 붙은 클래스로 요청의 흐름이 이어진다.
 
 
