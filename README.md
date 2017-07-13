@@ -58,6 +58,29 @@ application.properties에서 spring.thymeleaf.mode=LEGACYHTML5 추가하기
 
 calendar public source : https://calendar.naver.com/publicCalendar.nhn?publishedKey=769d54e7f884c5f930b4ec86eb15dc38
 
+<7.10>
+
+목표
+1. 프리뷰 인쇄 및 저장 범위 설정 옵션과 변환 경로 자동설정
+2. 이미지 변환하여 프리뷰 미리보기에 뿌려주기
+3. 인쇄 범위에 맞는 변환 저장 구현
+
+window.location will kill all scripts currently running in the browser.
+
+target directory의 소스들이 서버상에서 다루어지는 경로이고 파일들을 저장하게됨
+
+
+인턴 자기평가 메일 확인
+
+1. js - 페이지 개수 표시
+2. 변환 시키기
+
+-O landscape 해결
+
+날짜범위 단위를 일단위로 바꿔야함
+2014년 3월 캘린더 이미지가 고정적으로 되있음
+
+
 
 
 ==Spring==
