@@ -117,6 +117,55 @@ RESTful 웹서비스에 대한 얘기도 나오기 시작한지 꽤 됐고, 캘�
 어떤 방법을 쓰건 제대로 돌아가게 짜는게 제일 중요하니 나중에 고민하셔도 될 부분이기는 합니다 ㅎㅎ
 최종 발표도 기대되네요 ㅎㅎ
 
+<7.14>
+
+지금 사용하는 버전: biweekly 0.3.3 ical4j 1.0.6
+<iCalendar>
+- an open standard for exchanging calendar and scheduling information between users and computers.
+사용자와 서버간 스케줄링 정보 공유 규약
+
+- iCalendar files typically have the file extension ".ical" ".ics" ".ifb"  or ".icalendar" with a MIME type of "text/calendar"
+확장자명,  MIME 타입이란 클라이언트에게 전송된 문서의 다양성을 알려주기 위한 메커니즘
+
+- iCalendar is used to import and synchronize events on various platforms, including smart phones, computer and web applications
+다양한 플랫폼에서 이벤트 동기화와 import 가능케 해줌
+
+- An iCalendar file consists of sections starting with "BEGIN:" and ending with "END:".  The "VCALENDAR" is the global section that holds all other sections.  Other sections include "VEVENT" for events, "VTODO" for to-do items, "VJOURNAL" for journal entries, and "VTIMEZONE" for time zone information.  Multiple sections of the same type can be repeated.  For example, multiple "VEVENT" sections can occur in an iCalendar file to describe multiple events.
+모든 섹션은 비긴으로 시작해 엔드로 끝남, VCALENDAR는 글로벌 섹션으로 모든 섹션 포괄함, 같은 타입의 섹션 중복 가능(멀티 이벤트위함)
+
+- WebDAV로부터 확장된 CalDAV는 원격서버에서 이벤트 관리 가능케함
+
+- iCalendar 규약이 상세하게 정의되어있지만 확장가능하다. 그러나 벤더마다 지원 가능여부는 다를 것이다. 
+예시로 html 마크업(폰트, 색상, 레이아웃..)도 X-ALT-DESC파라미터로 이벤트 포맷에 설정가능케함.
+
+-"Organizer" refers to a role of a "Calendar User" within the scheduling protocol 
+
+- All calendar components start with the letter "V", Scheduling methods defined by iTIP [2446bis] are referred to with capitalized, quoted-strings of text
+모든 캘린더 컴포넌트들은  V 로 시작하고 모두  uppercase, 또한 스케줄링 메소드들도 모두 uppercase(REQUEST :캘린더 컴포넌트 생성이나 수정 요청하는 것 등등)
+
+- a SEMICOLON is used to separate property parameters from each other and a COMMA character is used to separate property values in a value list
+
+- WebDAV -
+(WebDAV) is an extension of the Hypertext Transfer Protocol (HTTP) that allows clients to perform remote Web content authoring operations
+The WebDAV protocol provides a framework for users to create, change and move documents on a server, typically a web server or web share
+
+<biweekly>
+
+- maven/gradle 빌드 툴 사용
+- 간단한고 직관적인 api
+- iCalendar 모든 명세 충족함
+- xml, json 포맷 지원
+- 모든 타임존 지원
+- json type의 경우 포맷이 일반적인 json형식과 다름
+
+<테스트 해볼것>
+-간단한 웹서버 만들어서 사용자가 입력한 정보를 iCalendar 포맷으로 모델에 저장한 후 뷰에 다시 뿌려주기
+- 로그인 기능 만들어 사용자 식별하여 정보 저장, 불러오기
+- 그 후 현재 프로토타입에 적용시키기 - 불러온 사용자 캘린더 정보를 이용해 html재구성 
+
+1. 입력 데이터 저장하는 모델에서 iCal포맷으로 저장
+
+
 
 
 
